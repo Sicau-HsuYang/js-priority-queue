@@ -6,10 +6,14 @@
 
 ## 1、使用打包工具
 
+```bash
+npm i js-priority-queue-lite
+```
+
 如果队列的元素不是基本数据类型，可以使用以下方式生成一个`最小堆`
 
 ```js
-import { Heap } from "js-priority-queue";
+import { Heap } from "js-priority-queue-lite";
 
 const minHeap = new Heap();
 
@@ -49,7 +53,7 @@ while (!minHeap.isEmpty()) {
 如果队列的元素不是基本数据类型，可以使用以下方式生成一个`最大堆`
 
 ```js
-import { Heap } from "js-priority-queue";
+import { Heap } from "js-priority-queue-lite";
 const maxHeap = new Heap();
 
 maxHeap.setSentry({
@@ -88,7 +92,7 @@ while (!maxHeap.isEmpty()) {
 如果队列的元素基本类型，如 number，可以按以下方式使用`最大堆`:
 
 ```js
-import { SimpleMaxHeap as MaxHeap } from "js-priority-queue";
+import { SimpleMaxHeap as MaxHeap } from "js-priority-queue-lite";
 const MaxHeap = SimpleMaxHeap;
 const maxHeap = new MaxHeap();
 
