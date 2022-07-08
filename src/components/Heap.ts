@@ -73,7 +73,7 @@ class Heap<T> {
    * 获取堆中最小的元素
    * @returns
    */
-  public getMin() {
+  public getFirst() {
     if (this.size == 0) {
       throw `can not get element from an empty heap`;
     }
@@ -138,7 +138,7 @@ class Heap<T> {
     for (parent = p; parent * 2 <= this.size; parent = child) {
       child = parent * 2;
       /* child指向左右子结点的较?者 */
-      if (child != this.size && this.selfCompare(this.data[child + 1], this.data[child])) {
+      if (child != this.size && this.selfCompare(this.data[child], this.data[child + 1])) {
         child++;
       }
       /* 找到了合适位置 */

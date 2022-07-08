@@ -172,7 +172,7 @@ while (!maxHeap.isEmpty()) {
 | size        | number                            | 返回当前堆中的元素个数                                                                                                                     |
 | setSentry   | T                                 | 设置哨兵元素，设置堆所允许存储不超过其值的最大或最小元素，用于参与堆的元素顺序调整时的比较，必须在开始插入元素之前设置                     |
 | setCompare  | (preVal: T, curVal: T) => boolean | 设置交换元素的规则，如果 preVal 大于等于 curVal 返回 true,则会将 curVal 向堆前部移动，否则向后移动，可以用其来控制当前堆是最大堆还是最小堆 |
-| getMin      | () => T                           | 获取堆顶的元素                                                                                                                             |
+| getTop      | () => T                           | 获取堆顶的元素                                                                                                                             |
 | isEmpty     | () = boolean                      | 判断堆是否为空                                                                                                                             |
 | insertQueue | (val: T） => void                 | 向堆中插入一个元素                                                                                                                         |
 | deleteQueue | (） => T                          | 从堆顶删除一个元素                                                                                                                         |
