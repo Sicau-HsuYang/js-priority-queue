@@ -1,6 +1,6 @@
 {
   "name": "js-priority-queue-lite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a priority queue implement in js ",
   "main": "dist/index.js",
   "scripts": {
